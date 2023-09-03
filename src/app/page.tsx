@@ -5,7 +5,7 @@ import { WritingTitle } from "@lab/components/@common/typography/writing-title";
 export default function Home() {
   return (
     <div>
-      <h1 className="heading1">Hello there, I'm Brett Adamson</h1>
+      <h1 className="heading1">Hello there, I&apos;m Brett Adamson</h1>
       <div className={styles.picsContainer}>
         <div className={styles.imageWrapper}>
           <Image
@@ -69,7 +69,7 @@ export default function Home() {
         </p>
         <p className="paragraph">
           Swyf launched its MVP to beta after only 6 weeks of development. It
-          launched more broadly shortly after in early 2023. Swyf's team
+          launched more broadly shortly after in early 2023. Swyf&apos;s team
           optimized for velocity in order to get to market quickly, attack
           users, and raise funds. The consumer facing side of Swyf consisted of
           iOS and Android mobile applications and a full-stack w e b
@@ -80,7 +80,7 @@ export default function Home() {
         <p className="paragraph">
           This presentation aims to recount how Swyf user facing applications
           were designed, architected, built, and launched with only a small team
-          of 3 engineers. It will analyze the team's processes, approach to
+          of 3 engineers. It will analyze the team&apos;s processes, approach to
           problem solving, and t i m eoptimization techniques used to increase
           velocity at all costs. Most importantly, ti will dive into Swyf as a
           product and how it was built, shipped, and improved upon.

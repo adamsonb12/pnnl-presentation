@@ -16,7 +16,7 @@ export const SelectNavigation = () => {
     >
       <optgroup label="Pages">
         <option value={"/"}>Introduction</option>
-        <option value={"/product"}>Swyf's Product</option>
+        <option value={"/product"}>Swyf&apos;s Product</option>
         <option value={"/setting"}>The Product</option>
         <option value={"/joining"}>Joining Swyf</option>
         <option value={"/beta-overview"}>Beta - 13 Weeks or Bust</option>

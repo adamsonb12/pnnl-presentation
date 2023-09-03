@@ -33,7 +33,7 @@ export const AsideNavigationLinks = () => {
       </NextLink>
       <NextLink href="/product">
         <StyledText isActive={pathname === "/product"}>
-          Swyf's Product
+          Swyf&apos;s Product
         </StyledText>
       </NextLink>
       <NextLink href="/setting">
