@@ -9,3 +9,35 @@
     margin-top: var(--navigation-desktop-margin);
   }
 }
+
+.section {
+  display: grid;
+  margin-top: 3em;
+}
+
+.picsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  max-width: var(--break-width-1280);
+
+  @media screen and (min-width: 39.375em) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 64em) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.imageWrapper {
+  box-shadow: 0px 3px 6px rgba(0, 17, 51, 0.25);
+  border-radius: 10px;
+}
+
+.image {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative !important;
+}

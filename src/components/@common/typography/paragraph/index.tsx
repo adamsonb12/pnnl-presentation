@@ -3,6 +3,7 @@
 import styled from "styled-components";
 
 import { fontSize16 } from "../../font-size";
+import { spacing8 } from "../../spacing";
 
 export const Paragraph = styled.p`
   color: ${(props) => props.theme.colors.text};
@@ -22,5 +23,8 @@ export const Paragraph = styled.p`
   & em,
   & i {
     color: ${(props) => props.theme.colors.textSecondary};
+  }
+  & + & {
+    margin-top: ${spacing8};
   }
 `;

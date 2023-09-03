@@ -19,7 +19,6 @@ export const Heading1 = styled.h1`
   line-height: 1.4;
   margin: 0;
   text-align: start;
-  letter-spacing: -0.03em;
   font-weight: 600;
 
   @media screen and (min-width: ${breakWidth880}) {
@@ -34,7 +33,6 @@ export const Heading2 = styled.h2`
   line-height: 1.4;
   margin: 0;
   text-align: start;
-  letter-spacing: -0.03em;
 
   @media screen and (min-width: ${breakWidth880}) {
     font-size: ${fontSize32};
