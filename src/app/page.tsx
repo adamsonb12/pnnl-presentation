@@ -5,7 +5,7 @@ import { WritingTitle } from "@lab/components/@common/typography/writing-title";
 export default function Home() {
   return (
     <div>
-      <h1 className="heading1">Hello there, I&apos;m Brett Adamson</h1>
+      <h1 className="heading1">Brett Adamson&apos;s Presentation</h1>
       <div className={styles.picsContainer}>
         <div className={styles.imageWrapper}>
           <Image
