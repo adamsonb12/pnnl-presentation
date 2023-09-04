@@ -15,10 +15,12 @@ export default function Joining() {
         <WritingTitle>Context</WritingTitle>
         <List>
           <ListItem>The developer who quit early had chosen Flutter</ListItem>
-          <ListItem>Swyf's contractors had mostly been junior level</ListItem>
           <ListItem>
-            The contractors didn't read between the lines to solve problems,
-            they strictly did what they were told
+            Swyf&apos;s contractors had mostly been junior level
+          </ListItem>
+          <ListItem>
+            The contractors didn&apos;t read between the lines to solve
+            problems, they strictly did what they were told
           </ListItem>
         </List>
       </div>
@@ -43,13 +45,13 @@ export default function Joining() {
             success and interest in mind
           </ListItem>
           <ListItem>
-            The app was not as far along as Swyf's head of product believed
+            The app was not as far along as Swyf&apos;s head of product believed
           </ListItem>
         </List>
       </div>
 
       <div>
-        <WritingTitle>My Proposal to Swyf's Team</WritingTitle>
+        <WritingTitle>My Proposal to Swyf&apos;s Team</WritingTitle>
         <List>
           <ListItem>First: Fire all contractors, including me</ListItem>
           <ListItem>

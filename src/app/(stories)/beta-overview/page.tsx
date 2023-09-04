@@ -41,8 +41,8 @@ export default function BetaOverview() {
             market
           </ListItem>
           <ListItem>
-            Fired before Thanksgiving if I didn't deliver (kinda joking, but
-            also not joking)
+            Fired before Thanksgiving if I didn&apos;t deliver (kinda joking,
+            but also not joking)
           </ListItem>
         </List>
       </div>

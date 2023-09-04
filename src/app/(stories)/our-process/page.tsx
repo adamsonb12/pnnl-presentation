@@ -25,7 +25,9 @@ export default function OurProcess() {
           <ListItem>
             mscw with pics, strengths and weaknesses of this pattern
           </ListItem>
-          <ListItem>Methodology, done isn't done until it's shipped</ListItem>
+          <ListItem>
+            Methodology, done isn&apos;t done until it&apos;s shipped
+          </ListItem>
         </List>
       </div>
 

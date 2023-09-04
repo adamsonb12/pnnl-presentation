@@ -31,8 +31,8 @@ export default function SituationMoonlighting() {
             progress
           </ListItem>
           <ListItem>
-            Swyf's Head of Product reached out to me about a 45 day contract to
-            help develop and assess their mobile app
+            Swyf&apos;s Head of Product reached out to me about a 45 day
+            contract to help develop and assess their mobile app
           </ListItem>
           <ListItem>I quickly realized Swyf needed help</ListItem>
         </List>
