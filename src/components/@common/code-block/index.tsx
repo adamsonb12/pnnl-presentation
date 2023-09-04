@@ -7,6 +7,7 @@ export const CodeBlock = ({ value }: { value: string }) => {
       text={value}
       language="tsx"
       showLineNumbers
+      // @ts-ignore this is the libraries own import and export and is from their docs, ignoring
       theme={dracula}
     />
   );
