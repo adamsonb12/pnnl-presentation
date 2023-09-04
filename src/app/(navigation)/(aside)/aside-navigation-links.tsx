@@ -3,6 +3,7 @@ import { Paragraph } from "@lab/components/@common/typography/paragraph";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styled from "styled-components";
+import { PATHS } from ".";
 
 // @ts-ignore
 const NextLink = styled(Link)`
@@ -28,46 +29,57 @@ export const AsideNavigationLinks = () => {
   return (
     <>
       <CategoryTitle>Pages</CategoryTitle>
-      <NextLink href="/">
-        <StyledText isActive={pathname === "/"}>Introduction</StyledText>
+      <NextLink href={PATHS.root}>
+        <StyledText isActive={pathname === PATHS.root}>Introduction</StyledText>
       </NextLink>
-      <NextLink href="/product">
-        <StyledText isActive={pathname === "/product"}>
-          Swyf&apos;s Product
+      <NextLink href={PATHS.situationProductVision}>
+        <StyledText isActive={pathname === PATHS.situationProductVision}>
+          Swyf&apos;s Product Vision
         </StyledText>
       </NextLink>
-      <NextLink href="/setting">
-        <StyledText isActive={pathname === "/setting"}>The Setting</StyledText>
+      <NextLink href={PATHS.situationMoonlighting}>
+        <StyledText isActive={pathname === PATHS.situationMoonlighting}>
+          Moonlighting
+        </StyledText>
       </NextLink>
-      <NextLink href="/joining">
-        <StyledText isActive={pathname === "/joining"}>Joining Swyf</StyledText>
+      <NextLink href={PATHS.joining}>
+        <StyledText isActive={pathname === PATHS.joining}>
+          Joining Swyf
+        </StyledText>
       </NextLink>
-      <NextLink href="/beta-overview">
-        <StyledText isActive={pathname === "/beta-overview"}>
+      <NextLink href={PATHS.betaOverview}>
+        <StyledText isActive={pathname === PATHS.betaOverview}>
           Beta - 13 Weeks or Bust
         </StyledText>
       </NextLink>
-      <NextLink href="/our-process">
-        <StyledText isActive={pathname === "/our-process"}>
+      <NextLink href={PATHS.ourProcess}>
+        <StyledText isActive={pathname === PATHS.ourProcess}>
           Our Process
         </StyledText>
       </NextLink>
-      <NextLink href="/road-blocks">
-        <StyledText isActive={pathname === "/road-blocks"}>
+      <NextLink href={PATHS.roadBlocks}>
+        <StyledText isActive={pathname === PATHS.roadBlocks}>
           Road Blocks
         </StyledText>
       </NextLink>
-      <NextLink href="/beta-launch">
-        <StyledText isActive={pathname === "/beta-launch"}>
+      <NextLink href={PATHS.betaLaunch}>
+        <StyledText isActive={pathname === PATHS.betaLaunch}>
           Beta Launch
         </StyledText>
       </NextLink>
-      <NextLink href="/hardening">
-        <StyledText isActive={pathname === "/hardening"}>Hardening</StyledText>
+      <NextLink href={PATHS.hardening}>
+        <StyledText isActive={pathname === PATHS.hardening}>
+          Hardening
+        </StyledText>
       </NextLink>
-      <NextLink href="/launching-broadly">
-        <StyledText isActive={pathname === "/launching-broadly"}>
+      <NextLink href={PATHS.launchingBroadly}>
+        <StyledText isActive={pathname === PATHS.launchingBroadly}>
           Launching Broadly
+        </StyledText>
+      </NextLink>
+      <NextLink href={PATHS.thankYou}>
+        <StyledText isActive={pathname === PATHS.thankYou}>
+          Thank You
         </StyledText>
       </NextLink>
     </>

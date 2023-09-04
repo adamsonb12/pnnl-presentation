@@ -4,6 +4,7 @@
   margin-top: var(--navigation-dropdown-container-height);
   overflow-y: scroll;
   padding-bottom: 3em;
+  max-width: var(--break-width-1600);
 
   @media screen and (min-width: 55em) {
     margin-top: var(--navigation-desktop-margin);

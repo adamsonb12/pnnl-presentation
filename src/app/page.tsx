@@ -1,11 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { WritingTitle } from "@lab/components/@common/typography/writing-title";
+import { List, ListItem } from "@lab/components/@common/typography/list";
+import { Heading2 } from "@lab/components/@common/typography/heading";
+import { spacing16 } from "@lab/components/@common/spacing";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="heading1">Brett Adamson&apos;s Presentation</h1>
+      <h1 className="heading1">Hello There, I&apos;m Brett Adamson</h1>
       <div className={styles.picsContainer}>
         <div className={styles.imageWrapper}>
           <Image
@@ -34,32 +37,6 @@ export default function Home() {
       </div>
 
       <section className={styles.section}>
-        <WritingTitle>BIO</WritingTitle>
-        <p className="paragraph">
-          Brett Adamson is a Senior Software Engineer specializing in front end
-          web development. Brett grew up in Pasco Washington on a farm and began
-          programming while studying at Brigham Young University. As a student,
-          Brett completed a 4 month summer internship at the Pacific Northwest
-          National Laboratory before graduating in 2018.
-        </p>
-        <p className="paragraph">
-          Brett spent the first few years of his career in larger organizations
-          and teams as a front end developer. Since April of 2021, Brett has
-          worked on small innovative startup teams, prioritizing velocity of
-          development and autonomy of work.
-        </p>
-        <p className="paragraph">
-          Most recently, as a Senior Software Engineer at a fin-tech startup
-          called Swyf, Brett played a pivotal role building a robust
-          peer-to-peer payment system. His responsibilities were designing,
-          architecting, and developing the entire user experience, including iOS
-          and Android mobile applications and a full-stack web application. Now
-          Brett is looking to join a larger team where he can continue to be a
-          key contributor, while learning from others.
-        </p>
-      </section>
-
-      <section className={styles.section}>
         <WritingTitle>BUILDING SWYF, A FIN-TECH STARTUP</WritingTitle>
         <p className="paragraph">
           Joining a stage 0 startup, with less than 5 months of runway, appears
@@ -85,6 +62,76 @@ export default function Home() {
           velocity at all costs. Most importantly, it will dive into Swyf as a
           product and how it was built, shipped, and improved upon.
         </p>
+      </section>
+
+      <section className={styles.section}>
+        <Heading2
+          style={{
+            marginBottom: spacing16,
+          }}
+        >
+          tl;dr
+        </Heading2>
+        <WritingTitle>Situation</WritingTitle>
+        <List>
+          <ListItem>
+            Swyf, a brand new fintech needed to launch an app to beta and raise
+            more money
+          </ListItem>
+        </List>
+      </section>
+
+      <section className={styles.section}>
+        <WritingTitle>Goals</WritingTitle>
+        <List>
+          <ListItem>13 weeks to launch a consumer fintech app to Beta</ListItem>
+          <ListItem>
+            App must be fully functioning with authentication, onboarding,
+            identity verification, bank account linking, deposits, withdrawals,
+            account management, and peer to peer payments
+          </ListItem>
+          <ListItem>
+            Needed to get 100 beta testers by December to prove to investors we
+            could execute
+          </ListItem>
+          <ListItem>
+            After acquiring funding, Swyf needed to focus on launching broadly
+            in 2023
+          </ListItem>
+        </List>
+      </section>
+
+      <section className={styles.section}>
+        <WritingTitle>Action</WritingTitle>
+        <List>
+          <ListItem>
+            Joined in September 2022 to take responsibility over the entire user
+            experience
+          </ListItem>
+          <ListItem>Identified key workflows and defined MVP</ListItem>
+          <ListItem>
+            Focused all developer processes to optimize for velocity
+          </ListItem>
+          <ListItem>
+            Designed, architected, and built react native mobile app
+          </ListItem>
+        </List>
+      </section>
+
+      <section className={styles.section}>
+        <WritingTitle>Result</WritingTitle>
+        <List>
+          <ListItem>Launched to production in October 23, 2022</ListItem>
+          <ListItem>Launched to official Beta November 7th, 2022</ListItem>
+          <ListItem>
+            200 Beta testers by December. Successfully raised an extension round
+            in January, 2023
+          </ListItem>
+          <ListItem>
+            Developed key features to expand the beta and launch broadly in
+            April, 2023
+          </ListItem>
+        </List>
       </section>
     </div>
   );

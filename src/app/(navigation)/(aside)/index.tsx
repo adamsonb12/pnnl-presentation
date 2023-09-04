@@ -26,3 +26,17 @@ export const AsideNavigation = () => {
     </>
   );
 };
+
+export const PATHS = {
+  root: "/",
+  situationProductVision: "/situation-product-vision",
+  situationMoonlighting: "/situation-moonlighting",
+  joining: "/joining",
+  betaOverview: "/beta-overview",
+  ourProcess: "/our-process",
+  roadBlocks: "/road-blocks",
+  betaLaunch: "/beta-launch",
+  hardening: "/hardening",
+  launchingBroadly: "/launching-broadly",
+  thankYou: "/thank-you",
+};

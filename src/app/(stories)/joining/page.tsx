@@ -1,3 +1,3 @@
 export default function Joining() {
-  return <p>Joining page content</p>;
+  return <p>Sitation Part 3 - Joining Swyf</p>;
 }

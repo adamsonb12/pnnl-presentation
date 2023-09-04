@@ -2,6 +2,7 @@
 
 import { Select } from "@lab/components/@common/fields/select";
 import { usePathname, useRouter } from "next/navigation";
+import { PATHS } from ".";
 
 export const SelectNavigation = () => {
   const pathname = usePathname();
@@ -15,16 +16,19 @@ export const SelectNavigation = () => {
       }}
     >
       <optgroup label="Pages">
-        <option value={"/"}>Introduction</option>
-        <option value={"/product"}>Swyf&apos;s Product</option>
-        <option value={"/setting"}>The Product</option>
-        <option value={"/joining"}>Joining Swyf</option>
-        <option value={"/beta-overview"}>Beta - 13 Weeks or Bust</option>
-        <option value={"/our-process"}>Our Process</option>
-        <option value={"/road-blocks"}>Road Blocks</option>
-        <option value={"/beta-launch"}>Beta Launch</option>
-        <option value={"/hardening"}>Hardening</option>
-        <option value={"/launching-broadly"}>Launching Broadly</option>
+        <option value={PATHS.root}>Introduction</option>
+        <option value={PATHS.situationProductVision}>
+          Swyf&apos;s Product Vision
+        </option>
+        <option value={PATHS.situationMoonlighting}>Moonlighting</option>
+        <option value={PATHS.joining}>Joining Swyf</option>
+        <option value={PATHS.betaOverview}>Beta - 13 Weeks or Bust</option>
+        <option value={PATHS.ourProcess}>Our Process</option>
+        <option value={PATHS.roadBlocks}>Road Blocks</option>
+        <option value={PATHS.betaLaunch}>Beta Launch</option>
+        <option value={PATHS.hardening}>Hardening</option>
+        <option value={PATHS.launchingBroadly}>Launching Broadly</option>
+        <option value={PATHS.thankYou}>Thank You</option>
       </optgroup>
     </Select>
   );
