@@ -6,6 +6,7 @@ export const defaultThemeColors: ThemeColors = {
   success: "#8DD815",
   danger: "#FF3247",
   text: "#fff",
+  link: "#6AD7FF",
   textSecondary: "rgba(255, 255, 255, 0.6)",
   border: "hsla(0, 0%, 100%, 0.07)",
   backdrop: "hsla(0, 0%, 100%, 0.1)",

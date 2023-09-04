@@ -5,6 +5,7 @@ export interface ThemeColors {
   danger: string;
   text: string;
   textSecondary: string;
+  link: string;
   border: string;
   codeBlockBackground: string;
   backdrop: string;

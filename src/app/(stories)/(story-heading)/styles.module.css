@@ -6,6 +6,8 @@
   max-height: 12em;
   overflow: hidden;
   display: flex;
+  box-shadow: 0px 3px 6px rgba(0, 17, 51, 0.25);
+  border-radius: 10px;
 }
 
 .image {
@@ -13,6 +15,7 @@
   position: relative !important;
   width: auto !important;
   height: auto !important;
+  border-radius: 10px;
 }
 
 .subtitle {
