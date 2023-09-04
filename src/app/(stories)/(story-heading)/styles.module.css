@@ -3,9 +3,8 @@
 }
 
 .imageWrapper {
-  max-height: 12em;
+  max-height: 18em;
   overflow: hidden;
-  display: flex;
   box-shadow: 0px 3px 6px rgba(0, 17, 51, 0.25);
   border-radius: 10px;
 }
@@ -13,8 +12,7 @@
 .image {
   object-fit: contain;
   position: relative !important;
-  width: auto !important;
-  height: auto !important;
+  width: max-content !important;
   border-radius: 10px;
 }
 

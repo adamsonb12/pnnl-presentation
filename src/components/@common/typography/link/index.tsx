@@ -1,3 +1,4 @@
+"use client";
 import NextLinker from "next/link";
 import styled from "styled-components";
 
