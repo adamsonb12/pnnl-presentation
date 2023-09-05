@@ -1,7 +1,7 @@
 "use client";
 import { CodeBlock as ReactCodeBlock, dracula } from "react-code-blocks";
 
-export const CodeBlock = ({ value }: { value: string }) => {
+export const CodeBlock = ({ value, ...props }: { value: string }) => {
   return (
     <ReactCodeBlock
       text={value}
@@ -9,6 +9,7 @@ export const CodeBlock = ({ value }: { value: string }) => {
       showLineNumbers
       // @ts-ignore this is the libraries own import and export and is from their docs, ignoring
       theme={dracula}
+      {...props}
     />
   );
 };

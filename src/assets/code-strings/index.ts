@@ -119,3 +119,115 @@ export default function PlaidLink({
   );
 }
 `;
+
+export const DATADOG_HOOK = `
+export const DatadogViewMetrics = () => {
+  const segments = useSegments();
+  const pathname = usePathname();
+  const viewKey = segments.join("/");
+
+  const { userId } = useUserId();
+
+  useEffect(() => {
+    DdRum.startView(
+      viewKey,
+      pathname,
+      {
+        userId: userId ?? undefined,
+        platform: Platform.OS,
+        version: Application.nativeApplicationVersion,
+        nativeBuildVersion: Application.nativeBuildVersion,
+        buildNumber: CI_PIPELINE_IID,
+      },
+      Date.now()
+    );
+  }, [viewKey, pathname]);
+
+  return null;
+};
+`;
+
+export const DATADOG_USE_HOOK = `
+export default function Root() {
+  return (
+    <DatadogViewMetrics />
+  )
+}
+`;
+
+export const PLAID_IMPROVED = `
+import { Alert } from "react-native";
+import { PlaidLink, LinkSuccess } from "react-native-plaid-link-sdk";
+import { useRouter } from "expo-router";
+import { ReactNode, useEffect, useState } from "react";
+
+import { useLocalizationContext } from "../../providers/localization";
+import {
+  LINKED_ACCOUNTS_PLAID_REFETCH_QUERY,
+  useCreatePlaidLinkToken,
+  useFinishPlaidToken,
+} from "./data";
+
+export const Plaid = ({
+  returnRoute,
+  children,
+}: {
+  returnRoute: "/home" | "/linked-bank-accounts";
+  children: ReactNode;
+}) => {
+  const { getTranslation } = useLocalizationContext();
+  const router = useRouter();
+
+  const [token, setToken] = useState<string>();
+  const [createPlaidLinkToken, { loading }] = useCreatePlaidLinkToken();
+  const finishPlaidLink = useFinishPlaidToken();
+
+  useEffect(() => {
+    if (!token && !loading) {
+      createPlaidLinkToken({
+        onCompleted: (data) => {
+          if (data?.plaidStartLink) {
+            setToken(data.plaidStartLink);
+          }
+        },
+      });
+    }
+  }, []);
+
+  return (
+    <PlaidLink
+      tokenConfig={{
+        token: token as string,
+        noLoadingState: false,
+      }}
+      onSuccess={async (success: LinkSuccess) => {
+        if (success.metadata.institution) {
+          finishPlaidLink({
+            variables: {
+              institutionId: success.metadata.institution.id,
+              publicToken: success.publicToken,
+            },
+            refetchQueries: [{ query: LINKED_ACCOUNTS_PLAID_REFETCH_QUERY }],
+            onCompleted: () => {
+              router.push(returnRoute);
+            },
+            onError: () => {
+              Alert.alert(
+                getTranslation("genericAlertErrorTitle"),
+                getTranslation("plaidLinkNewAccountFailedMessage")
+              );
+              router.push(returnRoute);
+            },
+          });
+        }
+      }}
+      onExit={() => {
+        router.push(returnRoute);
+      }}
+    >
+      {children}
+    </PlaidLink>
+  );
+};
+
+`;
