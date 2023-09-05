@@ -41,8 +41,8 @@ export default function Joining() {
             Startups are in the business of delivering, not mentoring
           </ListItem>
           <ListItem>
-            Mobile experience needed someone to own it as a whole with long term
-            success and interest in mind
+            Ownership is vital. The mobile experience needed someone to own it
+            as a whole with long term success and interest in mind
           </ListItem>
           <ListItem>
             The app was not as far along as Swyf&apos;s head of product believed

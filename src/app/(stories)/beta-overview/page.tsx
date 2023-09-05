@@ -1,6 +1,7 @@
 import { WritingTitle } from "@lab/components/@common/typography/writing-title";
 import { StoryHeading } from "../(story-heading)";
 import { List, ListItem } from "@lab/components/@common/typography/list";
+import { Link } from "@lab/components/@common/typography/link";
 
 export default function BetaOverview() {
   return (
@@ -20,7 +21,15 @@ export default function BetaOverview() {
           </ListItem>
           <ListItem>Organized the product into user workflows</ListItem>
           <ListItem>
-            We grouped each workflow into categories following the MSCW method
+            We grouped each workflow into categories following the{" "}
+            <Link
+              href="https://en.wikipedia.org/wiki/MoSCoW_method#:~:text=The%20term%20MOSCOW%20itself%20is,to%20make%20the%20word%20pronounceable."
+              target="_blank"
+            >
+              {" "}
+              MoSCoW{" "}
+            </Link>{" "}
+            method
           </ListItem>
         </List>
       </div>

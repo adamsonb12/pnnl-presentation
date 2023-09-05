@@ -20,7 +20,7 @@ export default function ProductVision() {
             Basically Venmo, but with credit card like rewards
           </ListItem>
           <ListItem>
-            Airtight security and identity verification, preventing most fraid
+            Airtight security and identity verification, preventing most fraud
             seen on top competitors
           </ListItem>
           <ListItem>

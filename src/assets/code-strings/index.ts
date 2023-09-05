@@ -229,5 +229,36 @@ export const Plaid = ({
     </PlaidLink>
   );
 };
+`;
 
+export const PLANNING_OUTPUT = `
+### MUST
+​
+- Add / Withdraw funds - getLinkedAccount query to finish
+- Send - need mutation
+- Request - need mutation
+- Qr code to scan
+- Qr code scanner to find user
+- eas build secrets (GOOGLE API KEYS)
+​
+- Build out welcome screens (carousel)
+- Play store
+- Transaction searching
+- Transaction list item
+​
+- Plaid - Jason (PENDING)
+​
+### SHOULD
+​
+- Revisit auth
+- In app notification - Brett
+​
+### COULD
+​
+- User detail
+- Transaction detail
+- Linked account detail
+- Other items from "rework" list
+​
+### WONT
 `;
