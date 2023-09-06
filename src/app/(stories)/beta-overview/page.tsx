@@ -2,6 +2,8 @@ import { WritingTitle } from "@lab/components/@common/typography/writing-title";
 import { StoryHeading } from "../(story-heading)";
 import { List, ListItem } from "@lab/components/@common/typography/list";
 import { Link } from "@lab/components/@common/typography/link";
+import Image from "next/image";
+import { Paragraph } from "@lab/components/@common/typography/paragraph";
 
 export default function BetaOverview() {
   return (
@@ -31,7 +33,39 @@ export default function BetaOverview() {
             </Link>{" "}
             method
           </ListItem>
+
+          <Image
+            alt="Custom keyboard"
+            src={"/workflows.png"}
+            width={300}
+            height={500}
+            style={{
+              marginTop: 16,
+              marginLeft: 16,
+              marginBottom: 16,
+            }}
+          />
+
+          <ListItem>
+            For each feature, workflow, or screen, we asked why should or
+            should&apos;t it be built?
+          </ListItem>
         </List>
+      </div>
+
+      <div>
+        <Paragraph>Custom Keyboard Example (we did not build this)</Paragraph>
+        <Image
+          alt="Custom keyboard"
+          src={"/keyboard.png"}
+          width={300}
+          height={350}
+          style={{
+            marginTop: 16,
+            marginLeft: 16,
+            marginBottom: 16,
+          }}
+        />
       </div>
 
       <div>
