@@ -17,3 +17,5 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Also check out the deployed version of this repo [here](https://pnnl-presentation.vercel.app/)
